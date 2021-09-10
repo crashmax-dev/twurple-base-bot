@@ -2,8 +2,13 @@
   "name": "twurple-base-bot",
   "version": "1.0.0",
   "description": "Twurple base bot",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist",
+  "types": "dist",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
   "scripts": {
     "dev": "nodemon example/client.ts",
     "dev:debug": "nodemon --inspect example/client.ts",
