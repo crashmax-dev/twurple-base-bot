@@ -1,0 +1,49 @@
+{
+  "name": "twurple-base-bot",
+  "version": "1.0.0",
+  "description": "Twurple base bot",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "nodemon example/client.ts",
+    "dev:debug": "nodemon --inspect example/client.ts",
+    "build": "rimraf dist && tsc"
+  },
+  "author": {
+    "name": "Vitalij Ryndin",
+    "email": "sys@crashmax.ru",
+    "url": "https://crashmax.ru"
+  },
+  "license": "MIT",
+  "keywords": [
+    "twitch",
+    "tmi",
+    "chat",
+    "bot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crashmax-dev/twurple-base-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crashmax-dev/twurple-base-bot/issues"
+  },
+  "homepage": "https://github.com/crashmax-dev/twurple-base-bot",
+  "devDependencies": {
+    "@types/node": "^16.7.6",
+    "nodemon": "^2.0.12",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@twurple/api": "^5.0.1",
+    "@twurple/auth": "^5.0.1",
+    "@twurple/auth-tmi": "^5.0.1",
+    "@twurple/chat": "^5.0.1",
+    "@types/lowdb": "^1.0.11",
+    "lowdb": "^1.0.0",
+    "tmi.js": "^1.8.5",
+    "winston": "^3.3.3"
+  }
+}
